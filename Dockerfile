@@ -4,8 +4,11 @@
 #  Alex Shvid
 #
 
+#
 # Build
-FROM ubuntu:18.04 AS builder
+#
+
+FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y locales libmicrohttpd-dev libjansson-dev \
 	libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev \
@@ -39,3 +42,6 @@ WORKDIR /src
 RUN ./autogen.sh && ./configure --disable-rabbitmq --disable-mqtt --prefix=/opt/janus && rm -f .git && make && make install && make configs
 
 WORKDIR /opt/janus
+
+EXPOSE 8088 8188
+ENTRYPOINT ["bin/janus"]

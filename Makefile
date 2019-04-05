@@ -19,7 +19,7 @@ build:
 	docker build -t $(REGISTRY)/$(BIN):$(VERSION) -f Dockerfile .
 
 run: build
-	docker run -p 8188:8188 $(REGISTRY)/$(BIN):$(VERSION) ./bin/janus
+	docker run -p 8088:8088 -p 8188:8188 $(REGISTRY)/$(BIN):$(VERSION) ./bin/janus
 
 push: build
 	docker push $(REGISTRY)/$(BIN):$(VERSION)
