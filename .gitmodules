@@ -1,0 +1,12 @@
+[submodule "src"]
+	path = src
+	url = https://github.com/meetecho/janus-gateway
+[submodule "nice"]
+	path = nice
+	url = https://gitlab.freedesktop.org/libnice/libnice
+[submodule "usrsctp"]
+	path = usrsctp
+	url = https://github.com/sctplab/usrsctp
+[submodule "libwebsockets"]
+	path = libwebsockets
+	url = https://libwebsockets.org/repo/libwebsockets
