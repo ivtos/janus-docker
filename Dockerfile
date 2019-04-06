@@ -43,7 +43,7 @@ RUN ./autogen.sh && ./configure --disable-rabbitmq --disable-mqtt --prefix=/opt/
 
 WORKDIR /opt/janus
 
-EXPOSE 80 7088 8088 8188 8089
+EXPOSE 8088 8188
 EXPOSE 10000-10200/udp
 
-ENTRYPOINT ["bin/janus"]
+ENTRYPOINT ["bin/janus", "--server-name=ivtos"]

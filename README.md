@@ -24,6 +24,7 @@ make
 
 ```
 make run
+open http://localhost:8088/janus/info
 ```
 
 ### Config
