@@ -1,6 +1,12 @@
 # janus-docker
 Dockerfile for Janus
 
+### Checkout
+
+```
+git submodule update --init --recursive
+```
+
 ### Build
 
 ```
