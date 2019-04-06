@@ -5,7 +5,7 @@ Dockerfile for Janus
 
 ```
 docker pull ivtos/janus:v0.6.3
-docker run --name=janus -p 127.0.0.1:8088:8088 -p 127.0.0.1:8188:8188 -d ivtos/janus:v0.6.3
+docker run --name=janus -d ivtos/janus:v0.6.3
 ```
 
 ### Checkout
